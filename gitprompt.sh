@@ -38,8 +38,9 @@ GIT_PROMPT_REMOTE=" "
 GIT_PROMPT_UNTRACKED="…"
 GIT_PROMPT_CLEAN="${BGreen}✔"
 
-PROMPT_START="$Yellow$PathShort$ResetColor"
-PROMPT_END=" \n$WHITE$Time12a$ResetColor $ "
+#PROMPT_START="$Yellow$PathShort$ResetColor"
+PROMPT_START="${debian_chroot:+($debian_chroot)}\[\033[00;31m\]\u@\h\[\033[00m\]:$Yellow$PathShort$ResetColor"
+PROMPT_END=" \n$WHITE\t$ResetColor $ "
 
 
 function update_current_git_vars() {
