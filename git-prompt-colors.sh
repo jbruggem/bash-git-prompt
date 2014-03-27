@@ -1,4 +1,6 @@
   # These are the color definitions used by gitprompt.sh
+  local PathShort="\w"
+  GIT_PROMPT_START="`hostname`: ${Yellow}${PathShort}${ResetColor}"
   GIT_PROMPT_PREFIX="["                 # start of the git info string
   GIT_PROMPT_SUFFIX="]"                 # the end of the git info string
   GIT_PROMPT_SEPARATOR="|"              # separates each item
